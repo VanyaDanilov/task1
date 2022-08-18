@@ -6,9 +6,9 @@ void RandArray()
   for(int i = 0; i < arr.Length; i++)
   {
     arr[i] = new Random().Next(0,2);
-    Console.Write("{0} ", arr[i]);
+    //Console.Write("{0} ", arr[i]);
   }
-    Console.WriteLine();
+    Console.WriteLine($"[{String.Join(",", arr)}]");
 }
 RandArray();
 
