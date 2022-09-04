@@ -24,10 +24,10 @@ void PrintArray(int[,,] array3D)
     {
         for (int j = 0; j < array3D.GetLength(1); j++)
         {
-            Console.Write($"X({i}) Y({j}) ");
+            Console.Write($" ");
             for (int k = 0; k < array3D.GetLength(2); k++)
             {
-                Console.Write($"Z({k})={array3D[i, j, k]}; ");
+                Console.Write($"({i},{j},{k}) = {array3D[i, j, k]}; ");
             }
             Console.WriteLine();
         }
